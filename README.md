@@ -2,11 +2,8 @@
 A deep learning-based system to classify human facial emotions from grayscale images into seven categories using Convolutional Neural Networks (CNNs).
 
 ## __Project Description__
-This project aims to automatically detect facial emotions using a neural network model trained on the FER-2013 dataset. It classifies 48x48 grayscale face images into seven emotion classes: Angry, Disgust, Fear, Happy, Sad, Surprise, and Neutral.
-
-The project showcases:
--A custom CNN model designed from scratch
--Transfer learning using VGG and ResNet architectures
--Visualizations, performance metrics, and prediction outputs
-
-This work is relevant for applications in mental health monitoring, user experience tracking, human-computer interaction, and surveillance systems.
+- Built a deep learning model to classify facial expressions into 7 categories using grayscale images from the FER-2013 dataset.
+- Addressed class imbalance using data augmentation techniques and class weighting during training.
+- Designed custom CNN models and experimented with advanced architectures like VGG16 and ResNet50V2.
+- Achieved 64% accuracy with ResNet50V2, evaluated using metrics like precision, recall, F1-score, and AUC-ROC.
+- Deployed the final model using Gradio and OpenCV to perform real-time emotion detection from webcam input.
