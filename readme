@@ -1,51 +1,12 @@
-# Emotion Detection Project 🎭
+# __Emotion Detection using CNNs and FER-2013__
+A deep learning-based system to classify human facial emotions from grayscale images into seven categories using Convolutional Neural Networks (CNNs).
 
-Facial emotion classification using Convolutional Neural Networks and the FER-2013 dataset.
+## __Project Description__
+This project aims to automatically detect facial emotions using a neural network model trained on the FER-2013 dataset. It classifies 48x48 grayscale face images into seven emotion classes: Angry, Disgust, Fear, Happy, Sad, Surprise, and Neutral.
 
----
+The project showcases:
+-A custom CNN model designed from scratch
+-Transfer learning using VGG and ResNet architectures
+-Visualizations, performance metrics, and prediction outputs
 
-## 📌 Project Overview
-
-This notebook demonstrates how to use deep learning models (CNNs) for detecting emotions from grayscale facial images (48x48 pixels). The goal is to classify expressions into 7 categories:  
-**Angry**, **Disgust**, **Fear**, **Happy**, **Sad**, **Surprise**, and **Neutral**.
-
----
-
-## 📁 Project Structure
-
-### 1. 📊 Data Analysis and Understanding
-- Class distribution and image visualization
-- Handling imbalanced classes
-
-### 2. 🧠 Custom CNN Model
-- Built CNN from scratch with regularization and pooling
-- Tuned for validation accuracy and generalization
-
-### 3. 🔁 Transfer Learning
-- Used pretrained models (e.g., VGG, ResNet) for performance comparison
-
-### 4. 📈 Evaluation
-- Accuracy, confusion matrix, and classification report
-- Visualization of predictions
-
----
-
-## 🚀 How to Run
-
-Run the notebook in Google Colab:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PratyushKD/Emotion-Detection/blob/main/Emotion_Detection_Project.ipynb)
-
----
-
-## 🗂️ Dataset
-
-The dataset used is [FER-2013](https://www.kaggle.com/datasets/msambare/fer2013), available on Kaggle.
-
----
-
-## 🔧 Requirements
-
-To run locally, install:
-```bash
-pip install -r requirements.txt
+This work is relevant for applications in mental health monitoring, user experience tracking, human-computer interaction, and surveillance systems.
