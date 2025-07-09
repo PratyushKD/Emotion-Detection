@@ -1,34 +1,51 @@
-Project Directory
+# Emotion Detection Project 🎭
 
-This directory contains the Colab notebook for the entire workflow, including:
+Facial emotion classification using Convolutional Neural Networks and the FER-2013 dataset.
 
-1. Data Analysis and Understanding:
-    - Conduct exploratory data analysis to understand the dataset's distribution and characteristics.
-    - Visualize class distributions and sample images to identify class imbalances and data quality.
+---
 
-2. Custom CNN:
-    - Design and iterate on custom CNN architectures to optimize model performance.
-    - Experiment with different layer configurations, activation functions, and kernel initializations.
+## 📌 Project Overview
 
-3. Callbacks:
-    - Implement callbacks such as `ModelCheckpoint`, `EarlyStopping`, `ReduceLROnPlateau`, and `CSVLogger` to enhance training efficiency and model performance.
+This notebook demonstrates how to use deep learning models (CNNs) for detecting emotions from grayscale facial images (48x48 pixels). The goal is to classify expressions into 7 categories:  
+**Angry**, **Disgust**, **Fear**, **Happy**, **Sad**, **Surprise**, and **Neutral**.
 
-4. Class Weights:
-    - Address class imbalance by assigning class weights during model training to give more importance to underrepresented classes.
+---
 
-5. Image Augmentation:
-    - Employ image augmentation techniques such as rotation, zoom, and horizontal flip to artificially increase the diversity of the training dataset.
+## 📁 Project Structure
 
-6. Transfer Learning Model Training:
-    - Utilize pre-trained models for transfer learning to leverage learned features and improve model accuracy, specifically:
-        - **VGG16**
-        - **ResNet50**
+### 1. 📊 Data Analysis and Understanding
+- Class distribution and image visualization
+- Handling imbalanced classes
 
-7. Model Evaluation:
-    - Evaluate model performance using various metrics and tools:
-        - ROC curves
-        - Classification reports
-        - Confusion matrices
+### 2. 🧠 Custom CNN Model
+- Built CNN from scratch with regularization and pooling
+- Tuned for validation accuracy and generalization
 
-8. Deployment:
-    - Deploy the model using Gradio for real-time emotion detection in live video streams.
+### 3. 🔁 Transfer Learning
+- Used pretrained models (e.g., VGG, ResNet) for performance comparison
+
+### 4. 📈 Evaluation
+- Accuracy, confusion matrix, and classification report
+- Visualization of predictions
+
+---
+
+## 🚀 How to Run
+
+Run the notebook in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PratyushKD/Emotion-Detection/blob/main/Emotion_Detection_Project.ipynb)
+
+---
+
+## 🗂️ Dataset
+
+The dataset used is [FER-2013](https://www.kaggle.com/datasets/msambare/fer2013), available on Kaggle.
+
+---
+
+## 🔧 Requirements
+
+To run locally, install:
+```bash
+pip install -r requirements.txt
